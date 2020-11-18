@@ -14,7 +14,7 @@
 
 const char FUNCTION_NAME[] = "ReplaceData";
 const char SEARCH_STR[] = "TestData";
-const char REPLACEMENT[] = "Testerer";
+const char REPLACEMENT[] = "Tester";
 const char PATH_TO_DLL[] = "LR3_DLL.dll";
 
 typedef HMODULE(WINAPI* LPLoadLibrary)(LPCSTR);

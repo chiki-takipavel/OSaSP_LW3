@@ -8,7 +8,7 @@
 using namespace std;
 
 const char SEARCH_STR[] = "TestData";
-const char REPLACEMENT[] = "Testerer";
+const char REPLACEMENT[] = "Tester";
 
 extern "C" void DLL_EXPORT __stdcall ReplaceData(DWORD pid, const char* data, const char* replacement)
 {
@@ -20,7 +20,7 @@ extern "C" void DLL_EXPORT __stdcall ReplaceData(DWORD pid, const char* data, co
 		MEMORY_BASIC_INFORMATION info;
 		const size_t dataLength = sizeof(data);
 		const size_t replacementLength = sizeof(replacement);
-		std::vector<char> chunk;
+		vector<char> chunk;
 		char* p = 0;
 		while (p < si.lpMaximumApplicationAddress)
 		{
